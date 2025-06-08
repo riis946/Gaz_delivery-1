@@ -38,9 +38,9 @@ Base URL: http://localhost:5000/api
 
 🔐 Middleware liés à l'authentification
 Middleware	         |            Description
-protect	             |           Protège les routes. Vérifie et décode le token JWT. Autorise aussi l'inscription du tout premier utilisateur sans authentification.
-isAdmin	             |            Vérifie que l'utilisateur est un administrateur.
-restrictTo(...roles) |	         Permet d’autoriser l’accès à certaines routes uniquement à certains rôles définis.
+protect	                 |           Protège les routes. Vérifie et décode le token JWT. Autorise aussi l'inscription du tout premier utilisateur sans authentification.
+isAdmin	                 |           Vérifie que l'utilisateur est un administrateur.
+restrictTo(...roles)     |	     Permet d’autoriser l’accès à certaines routes uniquement à certains rôles définis.
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -57,6 +57,7 @@ Corps de la requête:
    TRAM POUR : USERS ====> utilisateur(l'utilisateur se connecte)
 
  Requete [POST] ==> http://localhost:3000/auth/login
+
 Corps de la requête:
 
 {
